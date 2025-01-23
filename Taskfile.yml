@@ -4,7 +4,7 @@ version: "3"
 
 vars:
   SRC_DIR: src
-  OUT_DIR: docs
+  OUT_DIR: public
   TARGET_FILE: clock.wasm
 
 tasks:
