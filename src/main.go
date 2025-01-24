@@ -2,19 +2,17 @@ package main
 
 import (
 	"github.com/ewaldhorn/dommie/dom"
-	"github.com/ewaldhorn/tinycanvas/colour"
 	"github.com/ewaldhorn/tinycanvas/tinycanvas"
 )
 
 const (
-	canvasWidth  = 300
-	canvasHeight = 300
+	canvasWidth  = 150
+	canvasHeight = 150
 )
 
 var (
-	mainCanvas             *tinycanvas.TinyCanvas
-	canvasBackgroundColour *colour.Colour
-	graphicsContext        *tinycanvas.Context2D
+	mainCanvas *tinycanvas.TinyCanvas
+	ctx        *tinycanvas.Context2D
 )
 
 // ----------------------------------------------------------------------------
@@ -55,9 +53,8 @@ func startup() {
 // ----------------------------------------------------------------------------
 // create the main canvas we'll draw on, also get the graphics context
 func createMainCanvas() {
-	canvasBackgroundColour = colour.NewColourBlack()
 	mainCanvas = tinycanvas.NewTinyCanvas(canvasWidth, canvasHeight)
-	graphicsContext = mainCanvas.GetContext()
+	ctx = mainCanvas.GetContext()
 }
 
 // ----------------------------------------------------------------------------

@@ -12,7 +12,7 @@ canvas {
   max-width: 80%;
   max-height: 80%;
   margin: auto;
-  background-color: #103010ff;
+  background-color: white;
 }
 
 #tinyCanvasDiv {
