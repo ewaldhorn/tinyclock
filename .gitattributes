@@ -1,0 +1,8 @@
+# p5 and friends
+p5.js linguist-vendored
+p5.sound.js linguist-vendored
+
+d3.v7.js linguist-vendored
+d3.v7.min.js linguist-vendored
+
+three.js linguist-vendored
